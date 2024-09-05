@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Personagens</title>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    /* Cabecalho */
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav > ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        list-style-type: none;
+    }
+    
+    header nav > ul > li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header nav > ul > li > a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3em;
+    }
+
+    header nav > ul > li > a:hover{
+        color: skyblue;
+        transition: 0.5s ease;
+    }
+
+    /* Rodapé */
+    footer{
+        height: 200px;
+        background-color: black;
+        color: white;
+    }
+
+    footer ul{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul > li{
+        padding: 10px;
+        list-style-type: none;
+        border-right: 1px solid white;
+    }
+
+    footer ul > li > a{
+        text-decoration: none;
+        color: white;
+    }
+
+    footer > h2{
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+            <h1>Doentes da Cabeça</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">HQ´s</a></li>
+                <li><a href="#">Séries/Filmes</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner_c">
+                <h1>Bem-Vindo ao universo da DC Comics!</h1>
+                <p>Descubra os personagens desse universo incrível</p>
+                <a href="#" class="banner_button">Conheça nossos personagens</a>
+            </div>
+        </div>
+        
+            <div class="search_container">
+                <form action="/search" method="get" class="search_form">
+                    <input type="text" placeholder="Procure seu herói favorito..." name="search" class="search_input">
+                    <button type="submit" class="search_button">Pesquisar</button>
+                </form>
+            </div>
+
+        <section>
+            <div class="hero_container">
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/batman.png" alt="Batman" class="hero_image">
+                        <h2>Batman</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Batman</h2>
+                        <p>Batman, também conhecido como Bruce Wayne, é um vigilante de Gothan City. Ele luta contra o crime usando suas habilidades de detetive, artes marciais, e tecnologia avançada, sempre buscado justiça após a morte de seus pais.</p>
+                        <a href="https://www.dc.com/characters/batman">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/flash.png" alt="Flash" class="hero_image">
+                        <h2>Flash</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Flash</h2>
+                        <p>Flash, também conhecido como Barry Allen, é o homem mais rápido do mundo. Usando sua incrível velocidade, ele combate o crime e viaja através do tempo, sempre em busca de justiça e do bem maior.</p>
+                        <a href="https://www.dc.com/characters/the-flash">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/laterna_verde.png" alt="Laterna Verde" class="hero_image">
+                        <h2>Laterna Verde</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Laterna Verde</h2>
+                        <p>Lanterna Verde, também conhecido como Hal Jordan, é um membro da Tropa dos Lanternas Verdes. Com o poder de seu anel, ele protege o universo contra ameaças cósmicas, guiado pela coragem e pela justiça</p>
+                        <a href="https://www.dc.com/characters/green-lantern">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/superman.png" alt="Superman" class="hero_image">
+                        <h2>Superman</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Superman</h2>
+                        <p>Superman, também conhecido como Clark Kent, é um ícone da verdade e da justiça. Com sua força sobre-humana, visão de calor e capacidade de voar, ele defende a Terra contra ameaças e inspira esperança em todos.</p>
+                        <a href="https://www.dc.com/characters/superman">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/mulher_maravilha.png" alt="Mulher-Maravilha" class="hero_image">
+                        <h2>Mulher-Maravilha</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Mulher-Maravilha</h2>
+                        <p>Mulher-Maravilha, também conhecida como Diana Prince, é uma princesa amazona com força sobre-humana e habilidades de combate excepcionais. Ela luta pela justiça e pela igualdade, guiada pelos ideais de sua terra natal.</p>
+                        <a href="https://www.dc.com/characters/wonder-woman">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/cacador_de_marte.png" alt="Caçador de Marte" class="hero_image">
+                        <h2>Caçador de Marte</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Caçador de Marte</h2>
+                        <p>Caçador de Marte, também conhecido como J'onn J'onzz, é o último de sua raça. Com habilidades telepáticas e força sobre-humana, ele luta pela justiça e pela proteção da Terra, enquanto busca um lar para seu povo perdido.</p>
+                        <a href="https://www.dc.com/characters/martian-manhunter">Descubra mais >>></a>
+                    </div>  
+                </div>
+                <div class="hero_card">
+                    <div class="card-front">
+                        <img src="img/aquaman.png" alt="Aquaman" class="hero_image">
+                        <h2>Aquaman</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Aquaman</h2>
+                        <p>Aquaman, também conhecido como Arthur Curry, é o rei de Atlântida. Com a habilidade de comandar o mar e suas criaturas, ele defende os oceanos e une o mundo submarino ao mundo acima da água.</p>
+                        <a href="https://www.dc.com/characters/aquaman">Descubra mais >>></a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="">Politica de Privacidade</a></li>
+            <li><a href="">Termos</a></li>
+            <li><a href="">Opções de Anúncios</a></li>
+            <li><a href="">Acessibilidades</a></li>
+            <li><a href="">Gerenciar Prefêrencias</a></li>
+        </ul>
+        <h2>Criado por Anthonio Cesar S. Pereira</h2>
+    </footer>
+</body>
+</html>

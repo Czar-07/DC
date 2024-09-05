@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.banner{
+    background-image: url(../img/dc_universe.png);
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.banner_c{
+    max-width: 80%;
+
+}
+
+.banner h1{
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.banner p{
+    font-size: 15px;
+    margin: 10px 0 20px;
+}
+
+.banner_button{
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.banner_button:hover{
+    background-color: #d40000;
+}
+
+.hero_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hero_card{
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.6s ease;
+    will-change: transform;
+}
+
+.card-front{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+}
+
+.card-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-front h2{
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-back{
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.card-back h2{
+    margin-bottom: 10px;
+}
+
+.card-back p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.card-back a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+.card-back a:hover{
+    background-color: #333;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero_card:hover .card-front{
+    transform: rotateY(-180deg)
+}
+
+.hero_card:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+.search_container{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.search_input{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search_button{
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search_input:focus{
+    border-color: #ff0000;
+}
+
+.search_button:hover{
+    background-color: #d40000;
+}
